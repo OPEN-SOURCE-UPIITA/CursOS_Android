@@ -2,7 +2,7 @@
 // Lo que está entre paréntesis se llama "Constructor", es la lista de requisitos obligatorios que el objeto necesita para "nacer"
 class SensorTermico(val id: String, val ubicacion: String) {
 
-// Este es un atributo. Cada sensor devuelve un dato de temperatura que puede variar (var)
+// Este es un atributo. Cada sensor tiene un dato de temperatura que puede variar (var)
     var temperatura: Double = 36.5 
 
   // Este es un método. ¿Qué acción hará? Imprimir en pantalla un mensaje con la temperatura y ubicación de un sensor cada vez que se ejecute.
