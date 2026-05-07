@@ -75,3 +75,65 @@
         android:layout_height="wrap_content"
         android:text="Cerrar"
         android:layout_gravity="bottom|end" /> </FrameLayout>
+
+
+
+<!------------------------------------------------------------------------------------------------>
+<!-- Ejemplo de LinearLayout para nuestra app -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/linea1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenida"
+        android:textSize="25sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/linea2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mi_nombre"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp" /> 
+    
+    <TextView
+        android:id="@+id/linea3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mi_carrera"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/linea4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mi_escuela"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/linea5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mi_boleta"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
