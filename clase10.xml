@@ -1,0 +1,145 @@
+<!-- strings.xml -->
+
+<resources>
+    <string name="app_name">Ejemplo</string>
+
+    <string name="titulo_monitor">Monitor Ambiental</string>
+    <string name="btn_actualizar_clima">Actualizar Datos</string>
+    <string name="tv_temperatura">Temperatura: --</string>
+    <string name="tv_humedad">Humedad: --</string>
+    <string name="tv_presion">Presión: --</string>
+
+    <string name="titulo_actuadores">Control de Actuadores</string>
+    <string name="btn_encender">Encender LED</string>
+    <string name="btn_apagar">Apagar LED</string>
+    <string name="tv_estado_post">Estado del envío: Esperando...</string>
+
+</resources>
+
+
+<!-- activity_main.xml -->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="#0F172A"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1E293B"
+    android:padding="20dp"
+    android:elevation="4dp"
+    android:layout_marginBottom="25dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_monitor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#38BDF8"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/tvTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_temperatura"
+        android:textSize="18sp"
+        android:textColor="#F1F5F9"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvHumedad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_humedad"
+        android:textSize="18sp"
+        android:textColor="#F1F5F9"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvPresion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_presion"
+        android:textSize="18sp"
+        android:textColor="#F1F5F9"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnActualizarClima"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="@string/btn_actualizar_clima"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="#38BDF8"
+        android:textColor="#0F172A"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1E293B"
+        android:padding="20dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_actuadores"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#38BDF8"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnEncender"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:text="@string/btn_encender"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#22C55E"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnApagar"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:text="@string/btn_apagar"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#EF4444"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEstadoPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_estado_post"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#94A3B8"/>
+    </LinearLayout>
+
+</LinearLayout>
