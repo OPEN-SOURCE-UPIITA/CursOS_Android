@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="@color/ipn"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/tvTituloWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_bienvenida"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvSubtituloWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitulo_bienvenida"
+        android:textSize="18sp"
+        android:textColor="#E0E0E0"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvDescripcionWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion_bienvenida"
+        android:textSize="14sp"
+        android:textColor="#CCCCCC"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnEntrarSistema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="54dp"
+        android:text="@string/btn_entrar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/ipn"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
